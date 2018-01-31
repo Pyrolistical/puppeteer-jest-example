@@ -1,9 +1,26 @@
-[![CircleCI](https://circleci.com/gh/xfumihiro/jest-puppeteer-example/tree/master.svg?style=svg)](https://circleci.com/gh/xfumihiro/jest-puppeteer-example/tree/master)
+# puppeteer-jest-example
 
-# jest-puppeteer-example
+This is an example of setting up puppeteer, then calling jest smoothly.
 
-This is an example of using the global setup/teardown apis alone with the async test-environment apis to make jest work smoothly with puppeteer.
+Adapted from [jest-puppeteer-example](https://github.com/xfumihiro/jest-puppeteer-example)
 
-![](screenshot.png)
+```
+$ npm test
 
-> Please file an issue or send [me](https://twitter.com/xfumihiro) a DM if you have any questions.
+> @ test .../puppeteer-jest-example
+> node index.js
+
+PASS __tests__/test1.js
+PASS __tests__/test4.js
+PASS __tests__/test5.js
+PASS __tests__/test2.js
+PASS __tests__/test3.js
+
+Test Suites: 5 passed, 5 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        4.514s
+Ran all test suites.
+```
+
+> Please file an issue or send [@pyrolistical](https://twitter.com/pyroistical) a Tweet if you have any questions.

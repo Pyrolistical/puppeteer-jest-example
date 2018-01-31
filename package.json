@@ -1,13 +1,11 @@
 {
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "node index.js"
   },
   "devDependencies": {
-    "chalk": "^2.3.0",
-    "jest": "^22.0.0",
-    "prettier": "^1.9.2",
-    "puppeteer": "^0.13.0",
-    "rimraf": "^2.6.2"
+    "jest": "22.1.4",
+    "puppeteer": "1.0.0"
   }
 }
