@@ -4,6 +4,12 @@ This is an example of setting up puppeteer, then calling jest smoothly.
 
 Adapted from [jest-puppeteer-example](https://github.com/xfumihiro/jest-puppeteer-example)
 
+## Features
+ * reduce coupling with Jest API
+ * remove usage of global when creating browser (but kept global in test)
+ * generate jest environment code instead of passing around puppeteer ws endpoint
+ * graceful cleanup on CTRL+C
+
 ```
 $ npm test
 
