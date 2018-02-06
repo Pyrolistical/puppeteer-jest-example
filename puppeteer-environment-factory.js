@@ -16,6 +16,7 @@ module.exports = class extends NodeEnvironment {
 
   async teardown() {
     await super.teardown()
+    this.global.__BROWSER__.disconnect()
   }
 
   runScript(script) {
