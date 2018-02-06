@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer')
 const {promisify} = require('util')
+const process = require('process')
 const fs = require('fs')
 const path = require('path')
 const {spawn} = require('child_process')
@@ -14,6 +15,10 @@ async function main() {
   const cleanupBrowser = () => {
     return browser.close()
   }
+  process.on('SIGTERM', async () => {
+    await cleanupBrowser()
+    process.exit(0)
+  });
 
   try {
     const puppeteerEnvironmentFile = path.join(__dirname, 'puppeteer-environment.js')
